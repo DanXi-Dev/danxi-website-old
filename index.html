@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
         integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
     <style>
+        .developer-card {
+            margin: 5px auto;
+        }
+
         .passage-card {
             width: 80%;
             margin: auto;
@@ -17,6 +21,16 @@
 
         .mdui-appbar {
             margin-bottom: 20px;
+        }
+
+        .friend-link a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .spacer {
+            width: 100%;
+            height: 20px;
         }
     </style>
     <title>旦兮 | 可能是复旦学生最好的第三方校园服务APP</title>
@@ -42,8 +56,10 @@
                         <p>可能是复旦学生最好的第三方校园服务APP</p>
                     </div>
                     <div class="mdui-card-actions">
-                        <button class="mdui-btn mdui-ripple">现在下载</button>
-                        <button class="mdui-btn mdui-ripple">GitHub</button>
+                        <button class="mdui-btn mdui-ripple"
+                            onclick="javascript:window.location.href='https://github.com/DanXi-Dev/DanXi/releases'">现在下载</button>
+                        <button class="mdui-btn mdui-ripple"
+                            onclick="javascript:window.location.href='https://github.com/DanXi-Dev/DanXi'">GitHub</button>
                     </div>
                 </div>
                 <div class="mdui-col-xs-7">
@@ -52,13 +68,14 @@
             </div>
 
             <!-- 简介 -->
+            <div class="spacer"></div>
             <div class="mdui-row-xs-3">
                 <div class="mdui-col">
                     <h5>体积不大，<br />功能很强大</h5>
                     <p>快速平安打卡，查询饭卡余额、空教室、食堂拥堵情况...更多特性还在活跃更新中</p>
                 </div>
                 <div class="mdui-col">
-                    <h5>树洞集成：<br />嘘，里面请</h5>
+                    <h5>树洞集成,<br />嘘...里面请！</h5>
                     <p>接入 FDU Hole 树洞服务，前端匿名的世界里，看你怎么说</p>
                 </div>
                 <div class="mdui-col">
@@ -68,6 +85,7 @@
             </div>
 
             <!-- 功能列表 -->
+            <div class="spacer"></div>
             <h4>功能多多，方便快捷</h4>
             <div>
                 <ul>
@@ -82,91 +100,95 @@
                 </ul>
             </div>
 
-            <div class="mdui-divider"></div>
-
             <!-- 使用者评价 -->
+            <div class="spacer"></div>
             <h4>用过都说好！</h4>
             <p>用户：用上啦！目前体验很好，终于摆脱了ehall小程序😁。等明天试试pafd自动打卡</p>
             <p>用户：感谢开发同学，辛苦了~</p>
             <p>用户：旦兮太方便了！Ehall 再见!</p>
 
             <!-- 关于我们 -->
+            <div class="spacer"></div>
             <h4>关于我们</h4>
             <p>我们是来自复旦大学的学生</p>
             <div class="mdui-row-xs-4">
-                <div class="mdui-col">
+                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
+                    onclick="javascript:window.location.href='https://github.com/w568w'">
                     <div class="mdui-card mdui-hoverable">
                         <div class="mdui-card-header">
+                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/8389787">
+                            </img>
                             <div class="mdui-card-header-title">
-                                APP 开发者
+                                w568w
                             </div>
-                        </div>
-                        <div class="mdui-card-media">
-                            <img src="" alt="头像">
+                            <div class="mdui-card-header-subtitle">w568w</div>
                         </div>
                         <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">w568w</div>
-                            <div class="mdui-card-primary-subtitle">w568w</div>
+                            <div class="mdui-card-primary-title">APP 开发者</div>
+                            <div class="mdui-card-primary-subtitle">DanXi-Dev</div>
                         </div>
                         <div class="mdui-card-content">
-                            说两句名言
+                            我是 w568w
                         </div>
                     </div>
                 </div>
-                <div class="mdui-col">
+                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
+                    onclick="javascript:window.location.href='https://github.com/kavinzhao'">
                     <div class="mdui-card mdui-hoverable">
                         <div class="mdui-card-header">
+                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/12184989">
+                            </img>
                             <div class="mdui-card-header-title">
-                                APP 开发者
+                                singularity
                             </div>
-                        </div>
-                        <div class="mdui-card-media">
-                            <img src="" alt="头像">
+                            <div class="mdui-card-header-subtitle">kavinzhao</div>
                         </div>
                         <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">singularity</div>
-                            <div class="mdui-card-primary-subtitle">kavinzhao</div>
+                            <div class="mdui-card-primary-title">APP 开发者</div>
+                            <div class="mdui-card-primary-subtitle">DanXi-Dev</div>
                         </div>
                         <div class="mdui-card-content">
-                            说两句名言
+                            我是 singularity
                         </div>
                     </div>
                 </div>
-                <div class="mdui-col">
+                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
+                    onclick="javascript:window.location.href='https://github.com/KYLN24'">
                     <div class="mdui-card mdui-hoverable">
                         <div class="mdui-card-header">
+                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/54014142">
+                            </img>
                             <div class="mdui-card-header-title">
-                                Web 前端开发者
+                                Kylin24Kwok
                             </div>
-                        </div>
-                        <div class="mdui-card-media">
-                            <img src="" alt="头像">
+                            <div class="mdui-card-header-subtitle">KYLN24</div>
                         </div>
                         <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">Kylin24Kwok</div>
-                            <div class="mdui-card-primary-subtitle">KYLN24</div>
+                            <div class="mdui-card-primary-title">Web 前端开发者</div>
+                            <div class="mdui-card-primary-subtitle">DanXi-Dev FDUHole-Dev</div>
                         </div>
                         <div class="mdui-card-content">
-                            说两句名言
+                            一个萌新，请多多指教！
                         </div>
                     </div>
                 </div>
-                <div class="mdui-col">
+                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
+                    onclick="javascript:window.location.href='https://github.com/hasbai'">
                     <div class="mdui-card mdui-hoverable">
                         <div class="mdui-card-header">
+                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/34417826">
+                            </img>
                             <div class="mdui-card-header-title">
-                                Web 全栈开发者
+                                蛤失败
                             </div>
-                        </div>
-                        <div class="mdui-card-media">
-                            <img src="" alt="头像">
+                            <div class="mdui-card-header-subtitle">hasbai</div>
                         </div>
                         <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">蛤失败</div>
-                            <div class="mdui-card-primary-subtitle">hasbai</div>
+                            <div class="mdui-card-primary-title">Web 后端开发者</div>
+                            <div class="mdui-card-primary-subtitle">FDUHole-Dev</div>
                         </div>
                         <div class="mdui-card-content">
-                            说两句名言
+                            凡是过往，皆为序章
                         </div>
                     </div>
                 </div>
@@ -212,8 +234,18 @@
 
     </div>
     <div class="footer">
-        <div class="mdui-color-indigo" style="width: 100%;height: 64px; margin-top:20px">
-            <div class="mdui-center">©2021 DanXi-Dev</div>
+        <div class="mdui-color-indigo" style="height: 64px; margin-top:20px; padding: 10px;">
+            <div class="mdui-row-xs-2" style="width: 100%;">
+                <div class="mdui-col" style="text-align: center;">©2021 DanXi-Dev</div>
+                <div class="mdui-col" style="text-align: center;">
+                    <div class="mdui-row">
+                        友情链接
+                    </div>
+                    <div class="mdui-row friend-link">
+                        <a href="https://www.fduhole.tk">FDU Hole 树洞</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- MDUI JavaScript -->
