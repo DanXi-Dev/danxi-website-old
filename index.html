@@ -36,8 +36,8 @@
     <title>旦夕 | 可能是复旦学生最好的第三方校园服务APP</title>
 </head>
 
-<body>
-    <div class="mdui-appbar">
+<body style="padding: 64px 0">
+    <div class="mdui-appbar mdui-appbar-fixed">
         <!-- <div class="mdui-toolbar mdui-color-indigo">
             <a href="/" class="mdui-typo-title">旦夕 | 可能是复旦学生最好的第三方校园服务APP</a>
         </div> -->
@@ -45,6 +45,7 @@
             <a href="#index" class="mdui-ripple mdui-ripple-white">首页</a>
             <a href="#privacy" class="mdui-ripple mdui-ripple-white">隐私政策</a>
             <a href="#terms-and-condition" class="mdui-ripple mdui-ripple-white">使用协议</a>
+            <a href="#support" class="mdui-ripple mdui-ripple-white">支持</a>
         </div>
     </div>
     <div id="index" class="mdui-typo">
@@ -54,16 +55,12 @@
                     <div style="margin:auto">
                         <h1>旦夕</h1>
                         <p>可能是复旦学生最好的第三方校园服务APP</p>
-                    </div>
-                    <div class="mdui-card-actions">
-                        <button class="mdui-btn mdui-ripple"
-                            onclick="javascript:window.location.href='https://github.com/DanXi-Dev/DanXi/releases'">现在下载</button>
-                        <button class="mdui-btn mdui-ripple"
-                            onclick="javascript:window.location.href='https://github.com/DanXi-Dev/DanXi'">GitHub</button>
+                        <div><a href="https://github.com/DanXi-Dev/DanXi/releases">现在下载</a></div>
+                        <div><a href="https://github.com/DanXi-Dev/DanXi">GitHub</a></div>
                     </div>
                 </div>
                 <div class="mdui-col-xs-7">
-                    <!-- 图片轮播预留 -->
+
                 </div>
             </div>
 
@@ -75,12 +72,12 @@
                     <p>查询饭卡余额、空教室、食堂拥堵情况...更多特性还在活跃更新中</p>
                 </div>
                 <div class="mdui-col">
-                    <h5>树洞集成,<br />嘘...里面请！</h5>
-                    <p>接入 FDU Hole 树洞服务，前端匿名的世界里，看你怎么说</p>
+                    <h5>树洞集成，<br />嘘...里面请！</h5>
+                    <p>接入 FDU Hole 树洞服务，前端匿名的世界里，听听你的声音</p>
                 </div>
                 <div class="mdui-col">
                     <h5>开源，<br />安全有保障</h5>
-                    <p>旦夕作为开源软件，所有的行为都在项目首页的代码里明文给出。欢迎前往项目首页提供反馈。</p>
+                    <p>旦夕作为开源软件，所有的行为都在项目首页的代码里明文给出。欢迎前往 GitHub 项目首页提供反馈。</p>
                 </div>
             </div>
 
@@ -230,19 +227,28 @@
                     <li>旦夕开发团队可以随时修改旦夕开发团队编译的旦夕副本使用协议而恕不另行通知。</li>
             </div>
         </div>
-
     </div>
-    <div class="footer">
-        <div class="mdui-color-indigo" style="height: 64px; margin-top:20px; padding: 10px;">
-            <div class="mdui-row-xs-2" style="width: 100%;">
-                <div class="mdui-col" style="text-align: center;">©2021 DanXi-Dev</div>
-                <div class="mdui-col" style="text-align: center;">
-                    <div class="mdui-row">
-                        友情链接
-                    </div>
-                    <div class="mdui-row friend-link">
-                        <a href="https://www.fduhole.tk">FDU Hole 树洞</a>
-                    </div>
+    <div id="support">
+        <div class="passage-card mdui-card">
+
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">支持</div>
+                <div class="mdui-card-content mdui-typo">
+                    需要帮助？请前往项目的 <a href="https://github.com/DanXi-Dev/DanXi/issues">GitHub</a> 提交 Issue
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer mdui-typo" style="width:100%">
+        <div style="height: 48px; padding: 10px">
+            <div class="mdui-col" style="text-align: center;">©2021 <a href="https://github.com/DanXi-Dev">DanXi-Dev</a>
+            </div>
+            <div class="mdui-col" style="text-align: center;">
+                <div class="mdui-row">
+                    友情链接
+                </div>
+                <div class="mdui-row">
+                    <a href="https://www.fduhole.tk">FDU Hole 树洞</a>
                 </div>
             </div>
         </div>
