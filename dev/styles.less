@@ -1,0 +1,225 @@
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro",
+        "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial",
+        sans-serif;
+}
+
+body {
+    margin-top: 50px;
+}
+
+nav {
+    z-index: 9999;
+    height: 50px;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(250, 250, 250, 0.8);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        a {
+            color: #818181;
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+        &.current {
+            a {
+                color: #000;
+            }
+        }
+        padding: 10px;
+        position: relative;
+        list-style: none;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 0;
+            height: 100%;
+            border-bottom: 2px solid #000;
+            transition: all 0.2s linear;
+        }
+        &:hover::before {
+            width: 100%;
+            top: 0;
+            left: 0;
+            transition-delay: 0.1s;
+            border-bottom-color: #000;
+        }
+        &:active {
+            background: #000;
+            color: #fff;
+        }
+        &:hover ~ :before {
+            left: 0;
+        }
+    }
+}
+
+footer {
+    height: 1000px;
+}
+
+main {
+    #page-1 {
+        --progress-page-1: 0;
+        text-align: center;
+        height: calc(200vh - 50px);
+        background-color: rgba(
+            0,
+            0,
+            0,
+            calc(var(--progress-page-1) * 3.34 - 0.67)
+        );
+        .hero-container {
+            position: sticky;
+            top: 50%;
+            transform: translateY(-50%);
+            .app-icon {
+                margin: 3px;
+                transform: scale(calc(var(--progress-page-1) * 10 + 1));
+                opacity: calc(1.67 - var(--progress-page-1) * 3.34);
+            }
+            .other {
+                opacity: calc(1 - 5 * var(--progress-page-1));
+                .title {
+                    font-size: 4rem;
+                    margin: 2px;
+                }
+                .slogan {
+                    font-size: 1.5rem;
+                    margin: 2px;
+                }
+                .btns {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    flex-flow: row wrap;
+                    * {
+                        height: 50px;
+                        margin: 2px;
+                    }
+                    .github {
+                        border-radius: 7px;
+                        border: 1px solid #a6a6a6;
+                        padding: 5px;
+                        height: 40px;
+                        color: #ffffff;
+                        background-color: #000000;
+                        width: 168px;
+                        .github-icon {
+                            position: relative;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            float: left;
+                            mask-size: 100% 100%;
+                            width: 32px;
+                            height: 32px;
+                            background-size: 32px 32px;
+                            backface-visibility: hidden;
+                        }
+                        .text {
+                            float: left;
+                            text-align: left;
+                            .l2 {
+                                font-size: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #page-2 {
+        background-color: #000000;
+        // color: #ffffff;
+        --device-width: 61.8vw;
+        --device-height: calc(var(--device-width) * 1336 / 770);
+        --ui-width: calc(var(--device-width) * 640 / 770);
+        font-size: 15px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 4rem 0;
+        h2 {
+            color: #6e6e73;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 6rem 0;
+            p {
+                margin: 5px;
+                font-size: 1.5rem;
+                color: #fff;
+            }
+        }
+        #iphone {
+            position: relative;
+            width: var(--device-width);
+            height: var(--device-height);
+            #hardware {
+                width: 100%;
+                height: 100%;
+                background-image: url(/assets/image/iphone12-case.png);
+                background-size: var(--device-width) var(--device-height);
+            }
+            #ui {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                .top-ui {
+                    display: block;
+                    width: var(--ui-width);
+                    height: auto;
+                    margin: 70px auto 0;
+                }
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    --progress-page-2: 0;
+                    li img {
+                        display: block;
+                        width: var(--ui-width);
+                        height: auto;
+                        margin: 10px auto;
+                        transform: scale(
+                                calc(1.8 - 0.8 * var(--progress-page-2))
+                            )
+                            translateY(
+                                calc(-60px * (1 - var(--progress-page-2)))
+                            );
+                        opacity: var(--progress-page-2);
+                    }
+                }
+            }
+        }
+    }
+}
