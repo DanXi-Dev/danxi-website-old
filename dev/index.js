@@ -33,7 +33,6 @@ document.addEventListener('scroll', (e) => {
     let progress = scrolled
     if (progress < 0) progress = 0;
     if (progress > 1) progress = 1;
-    console.log(progress)
     page1.style.setProperty('--progress-page-1', progress)
 })
 
