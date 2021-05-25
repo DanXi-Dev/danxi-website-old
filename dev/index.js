@@ -41,7 +41,7 @@ const page2 = document.getElementById('page-2');
 const rows = document.querySelectorAll('#page-2 ul li')
 
 document.addEventListener('scroll', (e) => {
-    let scrolled = (html.scrollTop - getElementTop(page2)) / (page2.clientHeight * 0.5)
+    let scrolled = (html.scrollTop - getElementTop(page2)) / ((page2.clientHeight - document.getElementById('page-2-end-blank').clientHeight) * 0.5)
     total = 1 / rows.length
     for (let [index, row] of rows.entries()) {
         let start = total * index
@@ -51,4 +51,23 @@ document.addEventListener('scroll', (e) => {
         if (progress < 0) progress = 0;
         row.style.setProperty('--progress-page-2', progress)
     }
+})
+
+// PAGE-3
+const page3 = document.getElementById('page-3');
+document.addEventListener('scroll', (e) => {
+    let scrolled = (html.scrollTop - getElementTop(page3)) / (page3.clientHeight)
+    page3.style.setProperty('--scrolled-page-3', scrolled)
+    let progress = scrolled
+    if (progress < 0) progress = 0;
+    if (progress > 1) progress = 1;
+    page3.style.setProperty('--progress-page-3', progress)
+    // console.log(scrolled, progress)
+
+    let imgTranslateX = 0;
+    if (scrolled < -0.15) imgTranslateX = 0;
+    if (scrolled > -0.15 && scrolled < -0.05) imgTranslateX = (scrolled + 0.15) * 10
+    if (scrolled > -0.05) imgTranslateX = 1;
+    // console.log(imgTranslateX)
+    page3.style.setProperty('--imgtrans-x-page-3', imgTranslateX)
 })

@@ -145,7 +145,7 @@ main {
                             float: left;
                             text-align: left;
                             .l2 {
-                                font-size: 0.5rem;
+                                font-size: 0.8rem;
                             }
                         }
                     }
@@ -156,7 +156,7 @@ main {
     #page-2 {
         background-color: #000000;
         // color: #ffffff;
-        --device-width: 61.8vw;
+        --device-width: min(61.8vw, 770px);
         --device-height: calc(var(--device-width) * 1336 / 770);
         --ui-width: calc(var(--device-width) * 640 / 770);
         font-size: 15px;
@@ -166,7 +166,6 @@ main {
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        padding: 4rem 0;
         h2 {
             color: #6e6e73;
             text-align: center;
@@ -209,7 +208,6 @@ main {
                         display: block;
                         width: var(--ui-width);
                         height: auto;
-                        margin: 10px auto;
                         transform: scale(
                                 calc(1.8 - 0.8 * var(--progress-page-2))
                             )
@@ -221,5 +219,65 @@ main {
                 }
             }
         }
+        #page-2-end-blank {
+            height: 20vh;
+        }
+    }
+    #page-3 {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 48px 0 0;
+        --scrolled-page-3: 0;
+        --progress-page-3: 0;
+        --imgtrans-x-page-3: 0;
+        --hole-screenshot-width: 100vw;
+        .hole-img {
+            height: 100vh;
+            position: relative;
+            #hole-logo {
+                position: sticky;
+                top: 50%;
+                left: 50%;
+                transform: translate(
+                    calc(var(--imgtrans-x-page-3) * 61.8% - 50%),
+                    -50%
+                );
+                opacity: calc(var(--scrolled-page-3) * 10 + 3);
+            }
+            #danxi-logo {
+                position: sticky;
+                border-radius: 64px;
+                top: 50%;
+                left: 50%;
+                transform: translate(
+                    calc(var(--imgtrans-x-page-3) * (-61.8%) - 50%),
+                    -50%
+                );
+                opacity: calc(var(--scrolled-page-3) * 10 + 1.5);
+            }
+        }
+        .discussion-flow {
+            width: 100vh;
+            .hole-screenshot {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: var(--hole-screenshot-width);
+                #hole-iphone-head {
+                    width: min(100%, 700px);
+                }
+                #hole-screenshot {
+                    width: min(100%, 700px);
+                }
+                #hole-iphone-foot {
+                    width: min(100%, 700px);
+                }
+                #hole-iphone-last {
+                    width: min(100%, 700px);
+                }
+            }
+        }
+        // h2 {
+        // }
     }
 }
