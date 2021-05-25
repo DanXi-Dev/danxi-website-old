@@ -230,18 +230,35 @@ main {
         --scrolled-page-3: 0;
         --progress-page-3: 0;
         --imgtrans-x-page-3: 0;
-        --hole-screenshot-width: 100vw;
         .hole-img {
             height: 100vh;
             position: relative;
+            margin-bottom: 32px;
+            h2 {
+                position: sticky;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-120%);
+                color: #6e6e73;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 6rem 0;
+                opacity: calc(var(--scrolled-page-3) * 50 + 2);
+                p {
+                    margin: 5px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    opacity: calc(var(--scrolled-page-3) * 100 + 0.5);
+                }
+            }
             #hole-logo {
                 position: sticky;
                 top: 50%;
                 left: 50%;
                 // transform: translate(-50%, -50%);
-                transform: translate(
-                    calc(var(--imgtrans-x-page-3) * 61.8% - 50%),
-                    -50%
+                transform: translateX(
+                    calc(var(--imgtrans-x-page-3) * 61.8% - 50%)
                 );
                 opacity: calc(var(--scrolled-page-3) * 10 + 1.5);
             }
@@ -252,32 +269,25 @@ main {
                 left: 50%;
                 // transform: translate(-50%, -50%);
                 // display: none;
-                transform: translate(
-                    calc(var(--imgtrans-x-page-3) * (-61.8%) - 50%),
-                    -50%
+                transform: translateX(
+                    calc(var(--imgtrans-x-page-3) * (-61.8%) - 50%)
                 );
                 opacity: calc(var(--scrolled-page-3) * 10 + 0.5);
             }
         }
-        .discussion-flow {
-            width: 100vh;
-            .hole-screenshot {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: var(--hole-screenshot-width);
-                #hole-iphone-head {
-                    width: min(100%, 700px);
-                }
-                #hole-screenshot {
-                    width: min(100%, 700px);
-                }
-                #hole-iphone-foot {
-                    width: min(100%, 700px);
-                }
-                #hole-iphone-last {
-                    width: min(100%, 700px);
-                }
+
+        .hole-screenshot {
+            width: min(100vw, 700px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #hole-iphone-head {
+                position: sticky;
+                top: 50px;
+                width: 100%;
+            }
+            #hole-screenshot {
+                width: 100%;
             }
         }
         // h2 {
