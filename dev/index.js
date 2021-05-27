@@ -65,9 +65,9 @@ document.addEventListener('scroll', (e) => {
     console.log(scrolled, progress)
 
     let imgTranslateX = 0;
-    if (scrolled < -0.05) imgTranslateX = 0;
-    if (scrolled >= -0.05 && scrolled <= 0) imgTranslateX = (scrolled + 0.05) * 20
-    if (scrolled > 0) imgTranslateX = 1;
+    if (scrolled < -0.01) imgTranslateX = 0;
+    if (scrolled >= -0.01 && scrolled <= 0.09) imgTranslateX = (scrolled + 0.01) * 10
+    if (scrolled > 0.09) imgTranslateX = 1;
     page3.style.setProperty('--imgtrans-x-page-3', imgTranslateX)
     // console.log(imgTranslateX)
 })

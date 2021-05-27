@@ -37,7 +37,7 @@ nav {
     }
     li {
         a {
-            color: #818181;
+            color: #6e6e73;
             text-decoration: none;
             font-size: 1.25rem;
         }
@@ -77,10 +77,6 @@ nav {
             left: 0;
         }
     }
-}
-
-footer {
-    height: 1000px;
 }
 
 main {
@@ -260,7 +256,7 @@ main {
                 transform: translateX(
                     calc(var(--imgtrans-x-page-3) * 61.8% - 50%)
                 );
-                opacity: calc(var(--scrolled-page-3) * 10 + 1.5);
+                opacity: calc(var(--scrolled-page-3) * 10 + 1);
             }
             #danxi-logo {
                 position: sticky;
@@ -272,7 +268,7 @@ main {
                 transform: translateX(
                     calc(var(--imgtrans-x-page-3) * (-61.8%) - 50%)
                 );
-                opacity: calc(var(--scrolled-page-3) * 10 + 0.5);
+                opacity: calc(var(--scrolled-page-3) * 10 + 0.1);
             }
         }
 
@@ -297,6 +293,7 @@ main {
         color: #ffffff;
         background-color: #000000;
         height: 120vh;
+        padding: 48px;
         padding-top: 200px;
         h2 {
             position: sticky;
@@ -320,9 +317,112 @@ main {
     #user-comment {
         background-color: #000000;
         color: #ffffff;
+        text-align: center;
+        padding-top: 192px;
+        padding-bottom: 192px;
+        h2 {
+            font-size: 2rem;
+        }
+        ul {
+            margin: auto;
+            list-style-type: none;
+            width: min(80%, 960px);
+            li {
+                border-radius: 24px;
+                text-align: left;
+                margin-top: 36px;
+                padding: 24px;
+                border: 3px solid #ffffff;
+            }
+        }
     }
     #developers {
         background-color: #000000;
         color: #ffffff;
+        h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            text-align: center;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 0;
+            a {
+                text-decoration: none;
+                .developer-card {
+                    position: relative;
+                    width: min(80vh, 240px);
+                    border: 2px solid #ffffff;
+                    border-radius: 32px;
+                    margin: 12px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                    .developer-text {
+                        position: relative;
+                        padding: 5px 12px 12px;
+                        color: #ffffff;
+                        .developer-work {
+                            color: #6e6e73;
+                            font-size: 0.8rem;
+                        }
+                        .developer-displayname {
+                            font-size: 1.5rem;
+                        }
+                        .developer-name {
+                            color: #6e6e73;
+                        }
+                        .developer-organization {
+                            text-align: right;
+                        }
+                        .developer-saying {
+                            &::before {
+                                content: '"';
+                                color: #6e6e73;
+                                position: sticky;
+                                left: 0;
+                                top: 0;
+                                font-size: 3rem;
+                            }
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    border-top: 1px solid #6e6e97;
+    padding: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        li {
+            padding: 5px;
+            &::before {
+                content: "# ";
+            }
+            &:hover {
+                color: #6e6e73;
+            }
+        }
     }
 }
