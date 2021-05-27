@@ -1,318 +1,227 @@
-<!doctype html>
-<html lang="zh-cn-Hans">
+<!DOCTYPE html>
+<html lang="zh-hans">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=0" />
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="apple-itunes-app" content="app-id=1568629997" />
-    <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-        integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
-    <style>
-        .developer-card {
-            margin: 5px auto;
-        }
-
-        .passage-card {
-            width: 80%;
-            margin: auto;
-        }
-
-        .mdui-appbar {
-            margin-bottom: 20px;
-        }
-
-        .friend-link a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .spacer {
-            width: 100%;
-            height: 20px;
-        }
-    </style>
+    <link rel="stylesheet/less" type="text/css" href="/styles.less" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/less.js/4.1.0/less.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>旦夕 | 可能是复旦学生最好的第三方校园服务APP</title>
 </head>
 
-<body style="padding: 64px 0">
-    <div class="mdui-appbar mdui-appbar-fixed">
-        <!-- <div class="mdui-toolbar mdui-color-indigo">
-            <a href="/" class="mdui-typo-title">旦夕 | 可能是复旦学生最好的第三方校园服务APP</a>
-        </div> -->
-        <div class="mdui-tab mdui-color-indigo" mdui-tab>
-            <a href="#index" class="mdui-ripple mdui-ripple-white">首页</a>
-            <a href="#privacy" class="mdui-ripple mdui-ripple-white">隐私政策</a>
-            <a href="#terms-and-condition" class="mdui-ripple mdui-ripple-white">使用协议</a>
-            <a href="#support" class="mdui-ripple mdui-ripple-white">支持</a>
-        </div>
-    </div>
-    <div id="index" class="mdui-typo">
-        <div class="mdui-container">
-            <div style="margin:auto">
+<body>
+    <nav>
+        <ul>
+            <li class="current"><a href="/">首页</a></li>
+            <li><a href="/privacy">隐私政策</a></li>
+            <li><a href="/terms-and-condition">使用条款</a></li>
+            <li><a href="/support">支持</a></li>
+        </ul>
+    </nav>
 
-                <h1 style="font-size:2rem;">旦夕</h1>
-                <img src="/assets/image/danxi-icon.png" alt="DanXi ICON" height="320px" />
-                <p style="font-size:1.5rem;">可能是复旦学生最好的第三方校园服务APP</p>
-                <a href="https://github.com/DanXi-Dev/DanXi/releases"><button
-                        class="mdui-btn mdui-btn-raised mdui-color-indigo-700 mdui-ripple">现在下载</button></a>
-                <a href="https://github.com/DanXi-Dev/DanXi"><button
-                        class="mdui-btn mdui-btn-raised mdui-color-indigo-700 mdui-ripple">GitHub</button></a>
-            </div>
-
-            <!-- 简介 -->
-            <div class="spacer"></div>
-            <div class="mdui-row-xs-3">
-                <div class="mdui-col">
-                    <h5>体积不大，<br />功能很强大</h5>
-                    <p>查询饭卡余额、空教室、食堂拥堵情况...更多特性还在活跃更新中</p>
+    <main>
+        <div id="page-1">
+            <div class="hero-container">
+                <div class="app-icon">
+                    <img src="/assets/image/egg-cat.png" alt="DanXi icon" height="300" width="300">
                 </div>
-                <div class="mdui-col">
-                    <h5>树洞集成，<br />嘘...里面请！</h5>
-                    <p>接入 FDU Hole 树洞服务，前端匿名的世界里，听听你的声音</p>
-                </div>
-                <div class="mdui-col">
-                    <h5>开源，<br />安全有保障</h5>
-                    <p>旦夕作为开源软件，所有的行为都在项目首页的代码里明文给出。欢迎前往 GitHub 项目首页提供反馈。</p>
-                </div>
-            </div>
-
-            <!-- 功能列表 -->
-            <div class="spacer"></div>
-            <h4>功能多多，方便快捷</h4>
-            <div>
-                <ul>
-                    <li>校园卡余额和消费记录</li>
-                    <li>堂消费人数</li>
-                    <li>快速显示复活码（支持Apple Watch显示）</li>
-                    <li>空教室查询</li>
-                    <li>树洞</li>
-                    <li>课表查阅和导出为.ICS</li>
-                    <li>显示教务处通知</li>
-                </ul>
-            </div>
-
-            <!-- 使用者评价 -->
-            <div class="spacer"></div>
-            <h4>用过都说好！</h4>
-            <p>用户：用上啦！目前体验很好，终于摆脱了ehall小程序😁</p>
-            <p>用户：感谢开发同学，辛苦了~</p>
-            <p>用户：旦夕太方便了！Ehall 再见!</p>
-            <p>用户：这是要让ehall无地自容吗(꒪꒫꒪ )</p>
-
-            <!-- 关于我们 -->
-            <div class="spacer"></div>
-            <h4>关于我们</h4>
-            <div class="mdui-row-xs-4">
-                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
-                    onclick="javascript:window.location.href='https://github.com/w568w'">
-                    <div class="mdui-card mdui-hoverable">
-                        <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/8389787">
-                            </img>
-                            <div class="mdui-card-header-title">
-                                w568w
-                            </div>
-                            <div class="mdui-card-header-subtitle">w568w</div>
-                        </div>
-                        <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">APP 开发者</div>
-                            <div class="mdui-card-primary-subtitle">DanXi-Dev</div>
-                        </div>
-                        <div class="mdui-card-content">
-                            旦夕是一个我的问题
-                        </div>
+                <div class="other">
+                    <div class="title">
+                        旦夕
                     </div>
-                </div>
-                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
-                    onclick="javascript:window.location.href='https://github.com/kavinzhao'">
-                    <div class="mdui-card mdui-hoverable">
-                        <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/12184989">
-                            </img>
-                            <div class="mdui-card-header-title">
-                                singularity
-                            </div>
-                            <div class="mdui-card-header-subtitle">kavinzhao</div>
-                        </div>
-                        <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">APP 开发者</div>
-                            <div class="mdui-card-primary-subtitle">DanXi-Dev</div>
-                        </div>
-                        <div class="mdui-card-content">
-                            存在还是虚无？
-                        </div>
+                    <div class="slogan">
+                        可能是复旦学生最好的第三方校园服务APP
                     </div>
-                </div>
-                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
-                    onclick="javascript:window.location.href='https://github.com/KYLN24'">
-                    <div class="mdui-card mdui-hoverable">
-                        <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/54014142">
-                            </img>
-                            <div class="mdui-card-header-title">
-                                Kylin24Kwok
+                    <div class="btns">
+                        <a href="https://apps.apple.com/cn/app/旦夕/id1568629997" target="_blank"><img
+                                src="/assets/image/appstore.svg" alt="从 AppStore 下载旦夕"></a>
+                        <a href="https://hub.fastgit.org/DanXi-Dev/DanXi/releases/latest" target="_blank">
+                            <div class="github">
+                                <div class="github-icon"
+                                    style="background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/73/ed/4b/73ed4b61-c988-b23b-b381-cb09330d511f/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/152x152bb-80.png);">
+                                </div>
+                                <div class="text">
+                                    GitHub Release<br>
+                                    <span class="l2">通过 FastGit 下载</span>
+                                </div>
                             </div>
-                            <div class="mdui-card-header-subtitle">KYLN24</div>
-                        </div>
-                        <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">Web 前端开发者</div>
-                            <div class="mdui-card-primary-subtitle">DanXi-Dev FDUHole-Dev</div>
-                        </div>
-                        <div class="mdui-card-content">
-                            一个萌新，请多多指教！
-                        </div>
-                    </div>
-                </div>
-                <div class="developer-card mdui-col-xs-8 mdui-col-sm-5 mdui-col-md-3"
-                    onclick="javascript:window.location.href='https://github.com/hasbai'">
-                    <div class="mdui-card mdui-hoverable">
-                        <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar" src="https://avatars.githubusercontent.com/u/34417826">
-                            </img>
-                            <div class="mdui-card-header-title">
-                                蛤失败
-                            </div>
-                            <div class="mdui-card-header-subtitle">hasbai</div>
-                        </div>
-                        <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title">Web 后端开发者</div>
-                            <div class="mdui-card-primary-subtitle">FDUHole-Dev</div>
-                        </div>
-                        <div class="mdui-card-content">
-                            凡是过往，皆为序章
-                        </div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=io.github.w568w.dan_xi
+                    " target="_blank"><img src="/assets/image/googleplay.svg" alt="从 Google Play 下载旦兮"></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div id="privacy">
-        <div class="passage-card mdui-card">
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">旦夕隐私政策</div>
-            </div>
-            <div class="mdui-card-content mdui-typo">
-                <p>旦夕App是一个面向复旦大学学生的第三方集成式校园服务平台，由旦夕 App 前端、复旦大学UIS、FDU Hole 树洞平台构成。旦夕隐私政策由这三个部分的隐私政策构成。</p>
-                <h4>旦夕 App 前端</h4>
-                <p>旦夕 App 前端将您的数据存储在本地，不会上传至任何服务器。</p>
-                <h4>复旦大学UIS</h4>
-                <p>您的隐私数据由复旦大学采集，旦夕 App 仅在经过您的允许后读取有限数据。相关政策请访问<a href='https://www.fudan.edu.cn'>复旦大学官网</a>了解。本 App
-                    系第三方作品，与复旦大学无关。</p>
-                <h4>FDU Hole 树洞平台</h4>
-                <p>旦夕提供对于匿名论坛 FDU Hole 的访问。您的隐私数据由 FDU Hole 按照<a href='https://www.fduhole.tk/#/licence'>FDU Hole
-                        隐私政策</a>采集并使用。如果您不使用 FDU Hole 服务，则旦夕不会采集您的隐私数据。</p>
-            </div>
-        </div>
 
-
-    </div>
-    <div id="terms-and-condition">
-        <div class="passage-card mdui-card">
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">旦夕开发团队编译的旦夕副本使用协议</div>
-            </div>
-            <div class="mdui-card-content mdui-typo">
-                <p>使用旦夕开发团队编译的旦夕副本意味着您同意本使用协议。</p>
-                <p>旦夕依据 GPL-3.0 协议在 GitHub 开源，您可以从<a href='https://github.com/DanXi-Dev/DanXi'>项目首页</a>获得旦夕的源代码。</p>
-                <p>此外，使用旦夕开发团队编译的旦夕副本，您还需要同意：</p>
-                <ol>
-                    <li><a href='https://danxi-dev.github.io/privacy'>旦夕隐私政策</a>；</li>
-                    <li>旦夕开发团队编译的旦夕副本仅供学习交流使用，您对于您使用旦夕开发团队编译的旦夕副本的一切行为承担一切责任；</li>
-                    <li>旦夕开发团队可以随时修改旦夕开发团队编译的旦夕副本使用协议而恕不另行通知。</li>
-            </div>
-        </div>
-    </div>
-    <div id="support">
-        <div class="passage-card mdui-card">
-
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">支持</div>
-                <div class="mdui-card-content mdui-typo">
-                    <h2 id='faq'>FAQ</h2>
+        <div id="page-2">
+            <h2 data-aos="fade-up">
+                体积不大，功能很强大
+                <p>查询饭卡余额、空教室、食堂拥堵情况...更多特性还在活跃更新中</p>
+            </h2>
+            <div id="iphone">
+                <div id="hardware"></div>
+                <div id="ui">
+                    <img src="/assets/image/top-iphone12-ui.png" class="top-ui" alt="">
                     <ul>
-                        <li>
-                            <p>Q：旦夕安全吗？</p>
-                            <p>A：旦夕基于 <a href='https://github.com/DanXi-Dev/DanXi/blob/main/LICENSE'>GPL-3.0 License</a>
-                                协议在 <a href='https://github.com/DanXi-Dev/DanXi'>GitHub</a>
-                                开源，项目的所有代码都可以查看。这意味着，旦夕可以接受所有人的审查，不会包含任何恶意代码。</p>
-                        </li>
-                        <li>
-                            <p>Q：我的 UIS 账号安全吗？</p>
-                            <p>A：你的学号和密码只会保存在本地，不会上传至旦夕的服务器。</p>
-                        </li>
-                        <li>
-                            <p>Q：我的个人数据安全吗？</p>
-                            <p>A：你的个人数据是通过你保存的 UIS 账号直接从复旦大学服务器获取并在旦夕里显示的。你的任何个人数据都不会被上传至旦夕的服务器。</p>
-                        </li>
-                        <li>
-                            <p>Q：遇到了 BUG 怎么办？</p>
-                            <p>A：请给我们<a href='mailto:danxi_dev@protonmail.com'>发送邮件</a>，或直接前往 <a
-                                    href='https://github.com/DanXi-Dev/DanXi/issues'>GitHub</a> 提交 Issue。请注意，你的反馈中应该包含
-                            </p>
-                            <blockquote>
-                                <ol>
-                                    <li>设备系统版本</li>
-                                    <li>设备型号</li>
-                                    <li>旦夕 App 版本号</li>
-                                    <li>问题及复现手段</li>
-                                    <li>其他补充描述</li>
-
-                                </ol>
-                                <p>如：</p>
-                                <ol>
-                                    <li>iOS 14.5.1</li>
-                                    <li>iPhone 12</li>
-                                    <li>0.3.4</li>
-                                    <li>打开就崩溃</li>
-
-                                </ol>
-                            </blockquote>
-                        </li>
-                        <li>
-                            <p>Q：想要提前获取新功能！可以让我提前获取早期发布的版本吗？</p>
-                            <p>A：感谢支持！请通过<a href='danxi_dev@protonmail.com'>邮件</a>联系我们。</p>
-                        </li>
-                        <li>
-                            <p>Q：你们好可爱，想给你们打钱。</p>
-                            <p>A：来吧！<a href='https://afdian.net/@danxi-dev'>旦夕 App | 爱发电 (afdian.net)</a></p>
-                        </li>
-
-                    </ul>
-                    <p>&nbsp;</p>
-                    <h2 id='联系我们'>联系我们</h2>
-                    <p>DanXi-Dev GitHub 首页：<a href='https://github.com/DanXi-Dev' target='_blank'
-                            class='url'>https://github.com/DanXi-Dev</a></p>
-                    <p>DanXi-Dev 邮箱：<a href='mailto:danxi_dev@protonmail.com' target='_blank'
-                            class='url'>danxi_dev@protonmail.com</a></p>
-                    <p>DanXi App 开源仓库 Issue：<a href='https://github.com/DanXi-Dev/DanXi/issues' target='_blank'
-                            class='url'>https://github.com/DanXi-Dev/DanXi/issues</a></p>
-                    <p>&nbsp;</p>
+                        <li><img src="/assets/image/1-iphone12-ui.png" /></li>
+                        <li><img src="/assets/image/2-iphone12-ui.png" /></li>
+                        <li><img src="/assets/image/3-iphone12-ui.png" /></li>
+                        <li><img src="/assets/image/4-iphone12-ui.png" /></li>
+                        <li><img src="/assets/image/5-iphone12-ui.png" /></li>
+                        <li><img src="/assets/image/6-iphone12-ui.png" /></li>
+                        <li><img src="/assets/image/7-iphone12-ui.png" /></li>
+                        </ui>
                 </div>
+            </div>
+            <div id="page-2-end-blank"></div>
+        </div>
+
+        <div id="page-3">
+            <div class="hole-img">
+                <h2>
+                    树洞集成，<br />嘘...里面请！
+                    <p>内置 FDU Hole 树洞服务，<br />匿名的世界里，<br />让大家听见你的声音</p>
+                </h2>
+                <img src="/assets/image/danxi-icon.png" height="200" width="200" alt="旦夕 Logo" id="danxi-logo" />
+                <img src="/assets/image/webhole-favicon.svg" height="200" width="200" alt="树洞 Logo" id="hole-logo" />
+            </div>
+
+            <div class="hole-screenshot">
+                <img src="/assets/image/hole-ss-headbar.jpg" id="hole-iphone-head" />
+                <img src="/assets/image/hole-ss-posts.jpg" alt="内建 FDU Hole 截屏" id="hole-screenshot" />
             </div>
         </div>
-    </div>
-    <div class="footer mdui-typo" style="width:100%">
-        <div style="height: 48px; padding: 10px">
-            <div class="mdui-col" style="text-align: center;">©2021 <a href="https://github.com/DanXi-Dev">DanXi-Dev</a>
-            </div>
-            <div class="mdui-col" style="text-align: center;">
-                <div class="mdui-row">
-                    友情链接
-                </div>
-                <div class="mdui-row">
-                    <a href="https://www.fduhole.tk">FDU Hole 树洞</a>
-                </div>
-            </div>
+
+        <div id="page-4">
+            <div class="check-mark"></div>
+            <h2>
+                开源，<br />安全有保障
+                <p data-aos="fade-up">旦夕作为开源软件，所有的行为都在项目首页的代码里明文给出。欢迎前往 GitHub 项目首页提供反馈。</p>
+            </h2>
+            <img src="/assets/image/repository-page.jpg">
         </div>
-    </div>
-    <!-- MDUI JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
-        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-        crossorigin="anonymous"></script>
+        </div>
+
+        <div id="user-comment">
+            <h2 data-aos="fade-up">用用看？用过都说好！</h2>
+            <ul>
+                <li data-aos="fade-up">用户：用上啦！目前体验很好，终于摆脱了ehall小程序😁</li>
+                <li data-aos="fade-up">用户：感谢开发同学，辛苦了~</li>
+                <li data-aos="fade-up">用户：旦夕太方便了！Ehall 再见!</li>
+                <li data-aos="fade-up">用户：这是要让ehall无地自容吗(꒪꒫꒪ )</li>
+                <li data-aos="fade-up">用户：太美好了 希望有这样的平台很久了 感谢初创团队</li>
+                <li data-aos="fade-up">用户：成瘾啦 每隔一小会都要拿出来刷呢</li>
+                <li data-aos="fade-up">用户：旦兮很好用啊啊w不用存那么多个小程序在桌面上了 也不用自己导课表了x</li>
+                <li data-aos="fade-up">用户：有了旦夕，我成功摆脱了响应极慢的小程序...尤其是复活码，体验极佳！无事氵树洞也是极好的！还能随时随地看课表~</li>
+                <li data-aos="fade-up">用户：有了旦夕，妈妈再也不用担心我没有树洞的内容看了（</li>
+                <li data-aos="fade-up">用户：dd旦兮太爱了</li>
+            </ul>
+        </div>
+
+        <div id="developers">
+            <h2>
+                用心打造
+            </h2>
+            <div class="card-container">
+                <a href="https://github.com/w568w" target="_blank" data-aos="fade-up">
+                    <div class="developer-card">
+                        <img src="https://avatars.githubusercontent.com/u/8389787" />
+                        <div class="developer-text">
+                            <div class="developer-work">APP 开发者</div>
+                            <div class="developer-displayname">w568w</div>
+                            <div class="developer-name">w568w</div>
+                            <div class="developer-organization">DanXi-Dev</div>
+                            <div class="developer-saying">旦夕是一个我的问题</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/kavinzhao" target="_blank" data-aos="fade-up">
+                    <div class="developer-card">
+                        <img src="https://avatars.githubusercontent.com/u/12184989" />
+                        <div class="developer-text">
+                            <div class="developer-work">APP 开发者</div>
+                            <div class="developer-displayname">singularity</div>
+                            <div class="developer-name">kavinzhao</div>
+                            <div class="developer-organization">DanXi-Dev</div>
+                            <div class="developer-saying">存在还是虚无？</div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="https://github.com/KYLN24" target="_blank" data-aos="fade-up">
+                    <div class="developer-card">
+                        <img src="https://avatars.githubusercontent.com/u/54014142" />
+                        <div class="developer-text">
+                            <div class="developer-work">Web 前端开发者</div>
+                            <div class="developer-displayname">Kylin24Kwok</div>
+                            <div class="developer-name">KYLN24</div>
+                            <div class="developer-organization">DanXi-Dev FDUHole-Dev</div>
+                            <div class="developer-saying">一个萌新，请多多指教！</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/hasbai" target="_blank" data-aos="fade-up">
+                    <div class="developer-card">
+                        <img src="https://avatars.githubusercontent.com/u/34417826" />
+                        <div class="developer-text">
+                            <div class="developer-work">Web 后端开发者</div>
+                            <div class="developer-displayname">蛤失败</div>
+                            <div class="developer-name">hasbai</div>
+                            <div class="developer-organization">FDUHole-Dev</div>
+                            <div class="developer-saying">凡是过往，皆为序章</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="download-now">
+            <button data-aos="fade-up"
+                onclick="document.documentElement.scrollTo({top: 0, behavior: 'smooth'})">立即下载</button>
+        </div>
+    </main>
+    <footer style="background-color: #000000;color: #ffffff">
+        <p>©2021 <a style="color: #ffffff;" href="https://github.com/DanXi-Dev">DanXi-Dev</a></p>
+        <p>友情链接
+        <ul>
+            <li><a style="color: #ffffff;" href="https://www.fduhole.tk" target="_blank">
+                    FDUHole 树洞
+                </a></li>
+            <li><a style="color: #ffffff;" href="https://github.com/fduhole" target="_blank">
+                    FDUHole-Dev
+                </a></li>
+            <li><a style="color: #ffffff;" href="https://KYLN24.github.io/Elsewhere/" target="_blank">
+                    I'm KYLN: Elsewhere
+                </a></li>
+            <li><a style="color: #ffffff;" href="https://w568w.eu.org/" target="_blank">
+                    行云小站
+                </a></li>
+            <li><a style="color: #ffffff;" href="https://blog.salve.cf/" target="_blank">
+                    拾遗录
+                </a></li>
+            <li><a style="color: #ffffff;" href="https://kavinzhao.github.io" target="_blank">
+                    无处
+                </a></li>
+        </ul>
+        </p>
+
+    </footer>
+    <script src="/index.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            duration: 450,
+            delay: 5,
+        });
+    </script>
 </body>
 
 </html>
