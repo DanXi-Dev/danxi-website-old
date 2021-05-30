@@ -62,7 +62,7 @@ document.addEventListener('scroll', (e) => {
     if (progress < 0) progress = 0;
     if (progress > 1) progress = 1;
     page3.style.setProperty('--progress-page-3', progress)
-    console.log(scrolled, progress)
+    // console.log(scrolled, progress)
 
     let imgTranslateX = 0;
     if (scrolled < -0.01) imgTranslateX = 0;
