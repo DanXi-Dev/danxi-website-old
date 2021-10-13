@@ -90,6 +90,11 @@ nav {
 }
 
 main {
+    .page {
+        width: 100%;
+        overflow: hidden;
+    }
+
     #page-1 {
         --progress-page-1: 0;
         text-align: center;
@@ -103,12 +108,12 @@ main {
         .hero-container {
             position: -webkit-sticky;
             position: sticky;
-            top: 50%;
+            top: 50vh;
             transform: translateY(-50%);
             .app-icon {
-                margin: 3px;
-                transform: scale(calc(var(--progress-page-1) * 10 + 1));
-                opacity: calc(1.67 - var(--progress-page-1) * 3.34);
+                    margin: 3px;
+                    transform: scale(calc(var(--progress-page-1) * 10 + 1));
+                    opacity: calc(1.67 - var(--progress-page-1) * 3.34);
             }
             .other {
                 opacity: calc(1 - 5 * var(--progress-page-1));
