@@ -285,6 +285,19 @@
             delay: 5,
         });
     </script>
+    <script type="module">
+        import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+        async function getVersionTag() {
+            const octokit = new Octokit
+            const response = await octokit.request('GET /repos/{owner}/{repo}/releases/latest', {
+                owner: 'DanXi-Dev',
+                repo: 'DanXi'
+            })
+            console.log(response)
+            document.getElementById('neweast_version_id').innerHTML = response.data.tag_name
+        }
+        getVersionTag();
+    </script>
 </body>
 
 </html>
