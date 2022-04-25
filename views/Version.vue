@@ -1,72 +1,21 @@
-<!DOCTYPE html>
-<html lang="zh-hans">
+<template>
+ <nav-bar></nav-bar>
+ <main>
+    <article id='article' v-html="article"></article>
+ </main>
+ <site-footer></site-footer>
+</template>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no, user-scalable=no">
-    <meta name="renderer" content="webkit" />
-    <meta name="force-rendering" content="webkit" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="apple-itunes-app" content="app-id=1568629997" />
-    <link rel="stylesheet/less" type="text/css" href="/styles.less" />
-    <script src="https://cdn.bootcdn.net/ajax/libs/less.js/4.1.0/less.min.js"></script>
-    <link href="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-    <script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.4/aos.js"></script>
-    <title>更新记录 | 旦夕</title>
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="/">首页</a></li>
-            <li class="current"><a href="/version">更新记录</a></li>
-            <li><a href="/privacy">隐私政策</a></li>
-            <li><a href="/terms-and-condition">使用条款</a></li>
-            <li><a href="/support">支持</a></li>
-            <li><a href="/about">关于</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article id='article' />
-    </main>>
-    <footer>
-        <p>©2021~present <a href="https://github.com/DanXi-Dev">DanXi-Dev</a></p>
-        <p>友情链接
-        <ul>
-            <li><a href="https://www.fduhole.com" target="_blank">
-                    FDUHole 树洞
-                </a></li>
-            <li><a href="https://github.com/fduhole" target="_blank">
-                    FDUHole-Dev
-                </a></li>
-            <li><a href="https://KYLN24.github.io/Elsewhere/" target="_blank">
-                    I'm KYLN: Elsewhere
-                </a></li>
-            <li><a href="https://w568w.eu.org/" target="_blank">
-                    行云小站
-                </a></li>
-            <li><a href="https://blog.salve.cf/" target="_blank">
-                    拾遗录
-                </a></li>
-            <li><a href="https://kavinzhao.github.io" target="_blank">
-                    无处
-                </a></li>
-        </ul>
-        </p>
-
-    </footer>
-    <script>
-        AOS.init({
-            easing: 'ease-in-out-sine',
-            duration: 450,
-            delay: 5,
-        });
-    </script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/marked/4.0.2/marked.min.js"></script>
-    <script>
-        const article = `
-
+<script lang="ts">
+    import { defineComponent, computed } from "vue";
+    import { marked } from 'marked';
+    import NavBar from '../components/NavBar.vue';
+    import SiteFooter from "../components/SiteFooter.vue";
+    export default defineComponent({
+        name: 'Version',
+        components: { NavBar, SiteFooter },
+        setup() {
+            const version = `
 # 更新记录
 
 ## Release 1.3.7
@@ -680,9 +629,15 @@ iOS 上，快速向下滑动帖子回复时，可能会自动弹回顶部
 Only android & windows available now.
 
 `
+            const article = computed(() => {
+            return marked(version)
+           })
 
-        document.getElementById('article').innerHTML = marked.parse(article);
-    </script>
-</body>
+           return {article}
+        }
+    })
+</script>
 
-</html>
+<style lang="less">
+
+</style>
