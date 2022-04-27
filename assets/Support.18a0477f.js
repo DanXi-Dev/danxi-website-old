@@ -1,4 +1,4 @@
-import{m as A}from"./marked.esm.fe0f66b5.js";import{N as a,S as n}from"./SiteFooter.c70d3c1e.js";import{_ as B,d as i,g as s,c as r,a as F,b as E,F as c,o as p,r as e}from"./index.991e4350.js";const C=i({name:"Support",components:{NavBar:a,SiteFooter:n},setup(){const u=`
+import{m as A}from"./marked.esm.fe0f66b5.js";import{N as a,S as n}from"./SiteFooter.de1161af.js";import{_ as B,d as i,g as s,c as r,a as F,b as E,F as c,o as p,r as e}from"./index.a736e095.js";const C=i({name:"Support",components:{NavBar:a,SiteFooter:n},setup(){const u=`
 # \u652F\u6301
 
 ## \u65E6\u5915 App FAQ
