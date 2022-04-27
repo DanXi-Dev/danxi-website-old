@@ -1,7 +1,7 @@
 <template>
  <nav-bar></nav-bar>
  <main>
-        <div class="page" id="page-1">
+        <div class="page" id="page-1" ref="page1">
             <div class="hero-container">
                 <div class="app-icon">
                     <img src="../assets/image/egg-cat.webp" alt="DanXi icon" height="300" width="300">
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <div class="page" id="page-2">
+        <div class="page" id="page-2" ref="page2">
             <h2 data-aos="fade-up">
                 体积不大，功能很强大
                 <p>查询饭卡余额、空教室、食堂拥堵情况...更多特性还在活跃更新中</p>
@@ -91,10 +91,10 @@
                     </ul>
                 </div>
             </div>
-            <div id="page-2-end-blank"></div>
+            <div id="page-2-end-blank" ref="page2EndBlank"></div>
         </div>
 
-        <div class="page" id="page-3">
+        <div class="page" id="page-3" ref="page3">
             <div class="hole-img">
                 <h2>
                     树洞集成，<br />嘘...里面请！
@@ -246,11 +246,82 @@
         name: 'Home',
         components: { NavBar, SiteFooter },
         mounted() {
-            let script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = '/src/assets/home.js';
-            document.body.appendChild(script);
+            // let script = document.createElement('script');
+            // script.type = 'text/javascript';
+            // script.src = '/src/assets/home.js';
+            // document.body.appendChild(script);
+            const html = document.documentElement
+            window.addEventListener('scroll', (e) => {
+                const page1 = this.$refs.page1 as HTMLElement;
+                let scrolled = (html.scrollTop - this.getElementTop(page1)) / (page1.clientHeight)
+                let progress = scrolled
+                if (progress < 0) progress = 0;
+                if (progress > 1) progress = 1;
+                // @ts-ignore
+                page1.style.setProperty('--progress-page-1', progress)
+            })
+            window.addEventListener('scroll', (e) => {
+                const page2 = this.$refs.page2 as HTMLElement;
+                const rows = document.querySelectorAll('#page-2 ul li')
+                // const rows = document.querySelector('#page-2 ul li')
+                const page2End = this.$refs.page2EndBlank as HTMLElement
+                let scrolled = (html.scrollTop - this.getElementTop(page2)) / ((page2.clientHeight - page2End.clientHeight) * 0.5)
+                let total = 1 / rows.length
+                // @ts-ignore
+                for (let [index, row] of rows.entries()) {
+                    let start = total * index
+                    let end = total * (index + 1)
+                    let progress = (scrolled - start) / (end - start)
+                    if (progress > 1) progress = 1;
+                    if (progress < 0) progress = 0;
+                    row.style.setProperty('--progress-page-2', progress)
+                }
+            })
+            window.addEventListener('scroll', (e) => {
+                const page3 = this.$refs.page3 as HTMLElement;
+                let scrolled = (html.scrollTop - this.getElementTop(page3)) / (page3.clientHeight)
+                // @ts-ignore
+                page3.style.setProperty('--scrolled-page-3', scrolled)
+                let progress = scrolled
+                if (progress < 0) progress = 0;
+                if (progress > 1) progress = 1;
+                // @ts-ignore
+                page3.style.setProperty('--progress-page-3', progress)
+                // console.log(scrolled, progress)
+
+                let imgTranslateX = 0;
+                if (scrolled < -0.01) imgTranslateX = 0;
+                if (scrolled >= -0.01 && scrolled <= 0.09) imgTranslateX = (scrolled + 0.01) * 10
+                if (scrolled > 0.09) imgTranslateX = 1;
+                // @ts-ignore
+                page3.style.setProperty('--imgtrans-x-page-3', imgTranslateX)
+                // console.log(imgTranslateX)
+            })
         },
+        methods: {
+            getElementLeft(element) {
+                var actualLeft = element.offsetLeft;
+                var current = element.offsetParent;
+
+                while (current !== null) {
+                    actualLeft += current.offsetLeft;
+                    current = current.offsetParent;
+                }
+
+                return actualLeft;
+            }, 
+            getElementTop(element) {
+                var actualTop = element.offsetTop;
+                var current = element.offsetParent;
+
+                while (current !== null) {
+                    actualTop += current.offsetTop;
+                    current = current.offsetParent;
+                }
+
+                return actualTop as number;
+            }
+        }
     })
 </script>
 
