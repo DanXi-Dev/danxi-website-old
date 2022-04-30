@@ -8,6 +8,15 @@
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="apple-itunes-app" content="app-id=1568629997" />
+	<script>
+	  (function(){
+		let redirect = sessionStorage.redirect;
+		delete sessionStorage.redirect;
+		if (redirect && redirect !== location.href) {
+		  history.replaceState(null, null, redirect);
+		}
+	  })();
+	</script>
     <link rel="shortcut icon" href="/favicon.ico">
     <title>旦夕 | 可能是复旦学生最好的第三方校园服务APP</title>
   </head>
