@@ -1,4 +1,4 @@
-import{m as D}from"./marked.esm.fe0f66b5.js";import{N as t,S as A}from"./SiteFooter.de1161af.js";import{_ as a,d as n,g as r,c,a as F,b as E,F as s,o as p,r as B}from"./index.a736e095.js";const i=n({name:"Privacy",components:{NavBar:t,SiteFooter:A},setup(){const u=`
+import{m as D}from"./marked.esm.fe0f66b5.js";import{N as t,S as A}from"./SiteFooter.3a124842.js";import{_ as a,d as n,h as r,c,a as F,b as E,F as s,o as p,r as B}from"./index.aebb9679.js";const i=n({name:"Privacy",components:{NavBar:t,SiteFooter:A},setup(){const u=`
 # \u65E6\u5915\u9690\u79C1\u653F\u7B56
 
 \u65E6\u5915App\u662F\u4E00\u4E2A\u9762\u5411\u590D\u65E6\u5927\u5B66\u5B66\u751F\u7684\u7B2C\u4E09\u65B9\u96C6\u6210\u5F0F\u6821\u56ED\u670D\u52A1\u5E73\u53F0\uFF0C\u7531\u65E6\u5915 App \u524D\u7AEF\u3001\u590D\u65E6\u5927\u5B66 UIS\u3001FDU Hole \u6811\u6D1E\u5E73\u53F0\u6784\u6210\u3002\u65E6\u5915\u9690\u79C1\u653F\u7B56\u7531\u8FD9\u4E09\u4E2A\u90E8\u5206\u7684\u9690\u79C1\u653F\u7B56\u6784\u6210\u3002
@@ -15,4 +15,4 @@ import{m as D}from"./marked.esm.fe0f66b5.js";import{N as t,S as A}from"./SiteFoo
 ## FDUHole \u6811\u6D1E\u5E73\u53F0
 
 \u65E6\u5915\u63D0\u4F9B\u5BF9\u4E8E\u533F\u540D\u8BBA\u575B FDUHole \u7684\u8BBF\u95EE\u3002\u60A8\u7684\u9690\u79C1\u6570\u636E\u7531 FDUHole \u6309\u7167[FDUHole \u9690\u79C1\u653F\u7B56](https://www.fduhole.com/#/licence)\u91C7\u96C6\u5E76\u4F7F\u7528\u3002\u5982\u679C\u60A8\u4E0D\u4F7F\u7528 FDU Hole \u670D\u52A1\uFF0C\u5219\u65E6\u5915\u4E0D\u4F1A\u91C7\u96C6\u60A8\u7684\u9690\u79C1\u6570\u636E\u3002
-        `;return{article:r(()=>D(u))}}}),l=["innerHTML"];function m(u,e,_,d,f,U){const C=B("nav-bar"),o=B("site-footer");return p(),c(s,null,[F(C),E("main",null,[E("article",{id:"article",innerHTML:u.article},null,8,l)]),F(o)],64)}var h=a(i,[["render",m]]);export{h as default};
+        `;return{article:r(()=>D(u))}}}),l=["innerHTML"];function m(u,e,_,d,f,U){const C=B("nav-bar"),o=B("site-footer");return p(),c(s,null,[F(C),E("main",null,[E("article",{id:"article",innerHTML:u.article},null,8,l)]),F(o)],64)}var w=a(i,[["render",m]]);export{w as default};

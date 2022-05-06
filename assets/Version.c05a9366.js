@@ -1,4 +1,4 @@
-import{m as e}from"./marked.esm.fe0f66b5.js";import{N as a,S as i}from"./SiteFooter.de1161af.js";import{_ as r,d as s,g as o,c as n,a as E,b as F,F as d,o as l,r as D}from"./index.a736e095.js";const S=s({name:"Version",components:{NavBar:a,SiteFooter:i},setup(){const u=`
+import{m as e}from"./marked.esm.fe0f66b5.js";import{N as a,S as i}from"./SiteFooter.3a124842.js";import{_ as r,d as s,h as o,c as n,a as E,b as F,F as d,o as l,r as D}from"./index.aebb9679.js";const S=s({name:"Version",components:{NavBar:a,SiteFooter:i},setup(){const u=`
 # \u66F4\u65B0\u8BB0\u5F55
 
 ## Release 1.3.7

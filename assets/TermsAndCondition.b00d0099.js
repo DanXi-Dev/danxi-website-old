@@ -1,4 +1,4 @@
-import{m as r}from"./marked.esm.fe0f66b5.js";import{N as a,S as s}from"./SiteFooter.de1161af.js";import{_ as C,d as i,g as c,c as B,a as F,b as E,F as D,o as m,r as e}from"./index.a736e095.js";const p=i({name:"TermsAndCondition",components:{NavBar:a,SiteFooter:s},setup(){const u=`
+import{m as r}from"./marked.esm.fe0f66b5.js";import{N as a,S as s}from"./SiteFooter.3a124842.js";import{_ as C,d as i,h as c,c as B,a as F,b as E,F as D,o as m,r as e}from"./index.aebb9679.js";const p=i({name:"TermsAndCondition",components:{NavBar:a,SiteFooter:s},setup(){const u=`
 
 # \u65E6\u5915\u5F00\u53D1\u56E2\u961F\u7F16\u8BD1\u7684\u65E6\u5915\u526F\u672C\u4F7F\u7528\u6761\u6B3E
 
@@ -14,4 +14,4 @@ import{m as r}from"./marked.esm.fe0f66b5.js";import{N as a,S as s}from"./SiteFoo
 
 \u6CE8\uFF1AFOSS \u7248\u6216\u81EA\u884C\u7F16\u8BD1\u7684\u7248\u672C\u4E0D\u53D7\u6B64\u4F7F\u7528\u6761\u6B3E\u7EA6\u675F
 
-        `;return{article:c(()=>r(u))}}}),A=["innerHTML"];function d(u,t,l,_,f,v){const n=e("nav-bar"),o=e("site-footer");return m(),B(D,null,[F(n),E("main",null,[E("article",{id:"article",innerHTML:u.article},null,8,A)]),F(o)],64)}var N=C(p,[["render",d]]);export{N as default};
+        `;return{article:c(()=>r(u))}}}),A=["innerHTML"];function d(u,t,l,_,f,v){const n=e("nav-bar"),o=e("site-footer");return m(),B(D,null,[F(n),E("main",null,[E("article",{id:"article",innerHTML:u.article},null,8,A)]),F(o)],64)}var S=C(p,[["render",d]]);export{S as default};
