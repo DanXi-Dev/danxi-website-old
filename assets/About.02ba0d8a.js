@@ -1,4 +1,4 @@
-import{m as t}from"./marked.esm.fe0f66b5.js";import{N as D,S as B}from"./SiteFooter.3a124842.js";import{_ as r,d as i,h as l,c as m,a as e,b as o,F as s,o as c,r as E}from"./index.aebb9679.js";const C=i({name:"About",components:{NavBar:D,SiteFooter:B},setup(){const u=`
+import{m as t}from"./marked.esm.fe0f66b5.js";import{N as D,S as B}from"./SiteFooter.c78f6778.js";import{_ as r,d as i,h as l,c as m,a as e,b as o,F as s,o as c,r as E}from"./index.80b4001d.js";const C=i({name:"About",components:{NavBar:D,SiteFooter:B},setup(){const u=`
 # \u5173\u4E8E\u6211\u4EEC
 
 \u6211\u4EEC\u662F\u6765\u81EA\u590D\u65E6\u5927\u5B66\u7684\u672C\u79D1\u751F
