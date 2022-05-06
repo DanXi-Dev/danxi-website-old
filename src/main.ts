@@ -18,3 +18,7 @@ router.beforeEach((to, from, next) => {
     document.title = to.meta.title as string;
     next();
 });
+
+router.afterEach((to, from, next) => {
+    window.scrollTo(0, 0);
+})
