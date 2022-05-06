@@ -18,3 +18,9 @@ router.beforeEach((to, from, next) => {
     document.title = to.meta.title as string;
     next();
 });
+
+// reset scroll
+router.afterEach(() => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
