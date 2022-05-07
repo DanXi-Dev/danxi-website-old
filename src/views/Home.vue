@@ -8,7 +8,7 @@
                 </div>
                 <div class="other">
                     <div class="title">
-                        旦夕<span id="neweast_version_id">v1.3.8</span>
+                        旦夕<span id="newest_version_id">{{ latestVersion }}</span>
                     </div>
                     <div class="slogan">
                         可能是复旦学生最好的第三方校园服务 APP
@@ -240,12 +240,19 @@
 
 <script lang="ts">
     import { defineComponent } from "vue";
+    // @ts-ignore
+    import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
     import NavBar from '../components/NavBar.vue';
     import SiteFooter from "../components/SiteFooter.vue";
     export default defineComponent({
         name: 'Home',
+        data() {
+            const latestVersion: string = '...';
+            return { latestVersion }
+        },
         components: { NavBar, SiteFooter },
         mounted() {
+            this.getVersionTag();
             // let script = document.createElement('script');
             // script.type = 'text/javascript';
             // script.src = '/src/assets/home.js';
@@ -320,6 +327,15 @@
                 }
 
                 return actualTop as number;
+            },
+            async getVersionTag() {
+                const octokit = new Octokit
+                const response = await octokit.request('GET /repos/{owner}/{repo}/releases/latest', {
+                    owner: 'DanXi-Dev',
+                    repo: 'DanXi'
+                })
+                console.log(response)
+                this.latestVersion = response.data.tag_name
             }
         }
     })
@@ -334,7 +350,7 @@
         --progress-page-1: 0;
         text-align: center;
         height: calc(200vh - 50px);
-        #neweast_version_id {
+        #newest_version_id {
             font-size: 1.2rem;
             vertical-align: top;
         }
