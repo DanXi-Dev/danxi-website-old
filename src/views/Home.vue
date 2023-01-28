@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                         </a> -->
-                        <a href="https://www.pgyer.com/danxi" target="_blank">
+                        <!-- <a href="https://www.pgyer.com/danxi" target="_blank">
                             <div class="custom-btn">
                                 <div class="cb-icon" style="background-image: url(https://assets.pgyer.com/static-20210717/images/newHome/header/pgyer@2x.png);background-repeat:no-repeat;
                                     background-size:100% 100%;">
@@ -37,7 +37,7 @@
                                     <span class="l2">通过蒲公英下载</span>
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                         <a href="https://danxi.fduhole.com/DanXi">
                             <div class="custom-btn">
                                 <div class="cb-icon" id="danxi-icon">
@@ -54,10 +54,9 @@
                     <div class="tips">
                         <ul>
                             <li>iOS/watchOS/iPadOS/macOS 用户请前往 App Store 下载</li>
-                            <li>安卓用户与 Windows 用户请前往<a href="https://www.pgyer.com/danxi">蒲公英</a>、<a
+                            <li>安卓用户与 Windows 用户请前往<a
                                     href="https://www.github.com/DanXi-Dev/DanXi/releases/latest" target="_blank">GitHub
-                                    Release</a> 或 <a href="https://hub.fastgit.xyz/DanXi-Dev/DanXi/releases/latest"
-                                    target="_blank">FastGit 镜像</a> 下载
+                                    Release</a>下载
                             </li>
                             <li>强烈不建议安卓用户通过 <a
                                     href="https://play.google.com/store/apps/details?id=io.github.danxi_dev.dan_xi">Google
