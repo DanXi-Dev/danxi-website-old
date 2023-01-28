@@ -16,35 +16,12 @@
                     <div class="btns">
                         <a href="https://apps.apple.com/cn/app/旦夕/id1568629997" target="_blank"><img
                                 src="../assets/image/appstore.svg" alt="从 AppStore 下载旦夕"></a>
-                        <!-- <a href="https://hub.fastgit.org/DanXi-Dev/DanXi/releases/latest" target="_blank">
+                        <a href="https://danxi.jingyijun.xyz:8443" target="_blank">
                             <div class="custom-btn">
-                                <div class="cb-icon"
-                                    style="background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/73/ed/4b/73ed4b61-c988-b23b-b381-cb09330d511f/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/152x152bb-80.png);">
-                                </div>
-                                <div class="text">
-                                    GitHub Release<br>
-                                    <span class="l2">通过 FastGit 下载</span>
-                                </div>
-                            </div>
-                        </a> -->
-                        <!-- <a href="https://www.pgyer.com/danxi" target="_blank">
-                            <div class="custom-btn">
-                                <div class="cb-icon" style="background-image: url(https://assets.pgyer.com/static-20210717/images/newHome/header/pgyer@2x.png);background-repeat:no-repeat;
-                                    background-size:100% 100%;">
-                                </div>
+                                <img class="cb-icon" src="../assets/image/android.svg" alt="下载旦夕安卓版" />
                                 <div class="text">
                                     Android<br>
-                                    <span class="l2">通过蒲公英下载</span>
-                                </div>
-                            </div>
-                        </a> -->
-                        <a href="https://danxi.fduhole.com/DanXi">
-                            <div class="custom-btn">
-                                <div class="cb-icon" id="danxi-icon">
-                                </div>
-                                <div class="text">
-                                    旦夕 Web 版<br>
-                                    <span class="l2">处于早期测试状态中</span>
+                                    <span class="l2">下载</span>
                                 </div>
                             </div>
                         </a>
@@ -53,8 +30,9 @@
                     </div>
                     <div class="tips">
                         <ul>
+                            <li>电脑用户可使用<a href="https://www.fduhole.com/" target="_blank">网页版</a></li>
                             <li>iOS/watchOS/iPadOS/macOS 用户请前往 App Store 下载</li>
-                            <li>安卓用户与 Windows 用户请前往<a
+                            <li>安卓用户也可前往<a
                                     href="https://www.github.com/DanXi-Dev/DanXi/releases/latest" target="_blank">GitHub
                                     Release</a>下载
                             </li>
@@ -64,6 +42,7 @@
                             <li>安卓 FOSS 版请前往 <a
                                     href="https://f-droid.org/packages/io.github.danxi_dev.dan_xi/">F-Droid</a>
                                 下载</li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -398,8 +377,8 @@
                         // width: 168px;
                         .cb-icon {
                             position: relative;
-                            top: 50%;
-                            transform: translate(0, -50%);
+                            // top: 50%;
+                            // transform: translate(0, -50%);
                             float: left;
                             -webkit-mask-size: 100% 100%;
                             mask-size: 100% 100%;

@@ -2,7 +2,8 @@
     <nav>
         <ul v-show="!mobile" class="pc-nav">
             <li><router-link to="/">首页</router-link></li>
-            <li><router-link to="/version">更新记录</router-link></li>
+            <!-- <li><router-link to="/version">更新记录</router-link></li> -->
+            <li><a href="https://github.com/DanXi-Dev/DanXi/releases" target="_blank">更新记录</a></li>
             <li><router-link to="/privacy">隐私政策</router-link></li>
             <li><router-link to="/terms-and-condition">使用条款</router-link></li>
             <li><router-link to="/support">支持</router-link></li>
@@ -14,7 +15,9 @@
         <transition name="mobile-nav-menu">
              <ul v-show="mobileNav" class="dropdown-nav">
                 <li><router-link to="/">首页</router-link></li>
-                <li><router-link to="/version">更新记录</router-link></li>
+                <!-- <li><router-link to="/version">更新记录</router-link></li> -->
+                
+                <li><a href="https://github.com/DanXi-Dev/DanXi/releases" target="_blank">更新记录</a></li>
                 <li><router-link to="/privacy">隐私政策</router-link></li>
                 <li><router-link to="/terms-and-condition">使用条款</router-link></li>
                 <li><router-link to="/support">支持</router-link></li>
