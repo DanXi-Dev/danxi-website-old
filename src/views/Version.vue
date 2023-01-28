@@ -18,6 +18,8 @@
             const version = `
 # 更新记录
 
+注：该页面已不再更新。请前往[Github](https://github.com/DanXi-Dev/DanXi/releases)查看更新日志
+
 ## Release 1.3.7
 
 ### 更新日志

@@ -15,12 +15,12 @@
             <li><a style="color: #ffffff;" href="https://w568w.eu.org/" target="_blank">
                     行云小站
                 </a></li>
-            <li><a style="color: #ffffff;" href="https://blog.salve.cf/" target="_blank">
+            <!-- <li><a style="color: #ffffff;" href="https://blog.salve.cf/" target="_blank">
                     拾遗录
-                </a></li>
-            <li><a style="color: #ffffff;" href="https://kavinzhao.github.io" target="_blank">
+                </a></li> -->
+            <!-- <li><a style="color: #ffffff;" href="https://kavinzhao.github.io" target="_blank">
                     无处
-                </a></li>
+                </a></li> -->
         </ul>
         </p>
 
