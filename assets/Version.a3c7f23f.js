@@ -1,5 +1,7 @@
-import{m as e}from"./marked.esm.fe0f66b5.js";import{N as a,S as i}from"./SiteFooter.71555eb3.js";import{_ as r,d as s,h as o,c as n,a as E,b as F,F as d,o as l,r as D}from"./index.8d494835.js";const S=s({name:"Version",components:{NavBar:a,SiteFooter:i},setup(){const u=`
+import{m as e}from"./marked.esm.fe0f66b5.js";import{N as a,S as i}from"./SiteFooter.0186fd07.js";import{_ as r,d as s,h as n,c as o,a as E,b as F,F as d,o as l,r as D}from"./index.229c4664.js";const t=s({name:"Version",components:{NavBar:a,SiteFooter:i},setup(){const u=`
 # \u66F4\u65B0\u8BB0\u5F55
+
+\u6CE8\uFF1A\u8BE5\u9875\u9762\u5DF2\u4E0D\u518D\u66F4\u65B0\u3002\u8BF7\u524D\u5F80[Github](https://github.com/DanXi-Dev/DanXi/releases)\u67E5\u770B\u66F4\u65B0\u65E5\u5FD7
 
 ## Release 1.3.7
 
@@ -611,4 +613,4 @@ iOS \u4E0A\uFF0C\u5FEB\u901F\u5411\u4E0B\u6ED1\u52A8\u5E16\u5B50\u56DE\u590D\u65
 
 Only android & windows available now.
 
-`;return{article:o(()=>e(u))}}}),t=["innerHTML"];function O(u,B,c,g,R,m){const A=D("nav-bar"),C=D("site-footer");return l(),n(d,null,[E(A),F("main",null,[F("article",{id:"article",innerHTML:u.article},null,8,t)]),E(C)],64)}var U=r(S,[["render",O]]);export{U as default};
+`;return{article:n(()=>e(u))}}}),S=["innerHTML"];function O(u,B,c,g,R,m){const A=D("nav-bar"),C=D("site-footer");return l(),o(d,null,[E(A),F("main",null,[F("article",{id:"article",innerHTML:u.article},null,8,S)]),E(C)],64)}var U=r(t,[["render",O]]);export{U as default};
