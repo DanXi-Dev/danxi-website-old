@@ -1,4 +1,4 @@
-import{m as e}from"./marked.esm.fe0f66b5.js";import{N as a,S as i}from"./SiteFooter.0186fd07.js";import{_ as r,d as s,h as n,c as o,a as E,b as F,F as d,o as l,r as D}from"./index.229c4664.js";const t=s({name:"Version",components:{NavBar:a,SiteFooter:i},setup(){const u=`
+import{m as e}from"./marked.esm.fe0f66b5.js";import{N as a,S as i}from"./SiteFooter.17cc3c8a.js";import{_ as r,d as s,h as n,c as o,a as E,b as F,F as d,o as l,r as D}from"./index.fbeee587.js";const t=s({name:"Version",components:{NavBar:a,SiteFooter:i},setup(){const u=`
 # \u66F4\u65B0\u8BB0\u5F55
 
 \u6CE8\uFF1A\u8BE5\u9875\u9762\u5DF2\u4E0D\u518D\u66F4\u65B0\u3002\u8BF7\u524D\u5F80[Github](https://github.com/DanXi-Dev/DanXi/releases)\u67E5\u770B\u66F4\u65B0\u65E5\u5FD7
