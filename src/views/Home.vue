@@ -16,7 +16,7 @@
                     <div class="btns">
                         <a href="https://apps.apple.com/cn/app/旦夕/id1568629997" target="_blank"><img
                                 src="../assets/image/appstore.svg" alt="从 AppStore 下载旦夕"></a>
-                        <a href="https://danxi.jingyijun.xyz:8443/DanXi-1.3.11-release.android.apk" target="_blank">
+                        <a href="https://danxi.jingyijun.xyz:8443/DanXi-1.3.13-release.android.apk" target="_blank">
                             <div class="custom-btn">
                                 <img class="cb-icon" src="../assets/image/android.svg" alt="下载旦夕安卓版" />
                                 <div class="text">
