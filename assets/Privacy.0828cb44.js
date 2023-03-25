@@ -1,4 +1,4 @@
-import{m as D}from"./marked.esm.fe0f66b5.js";import{N as t,S as A}from"./SiteFooter.17cc3c8a.js";import{_ as a,d as n,h as r,c,a as F,b as E,F as s,o as p,r as B}from"./index.fbeee587.js";const i=n({name:"Privacy",components:{NavBar:t,SiteFooter:A},setup(){const u=`
+import{m as D}from"./marked.esm.fe0f66b5.js";import{N as t,S as A}from"./SiteFooter.21a80b71.js";import{_ as a,d as n,h as r,c,a as F,b as E,F as s,o as p,r as B}from"./index.4e1751d2.js";const i=n({name:"Privacy",components:{NavBar:t,SiteFooter:A},setup(){const u=`
 # \u65E6\u5915\u9690\u79C1\u653F\u7B56
 
 \u65E6\u5915App\u662F\u4E00\u4E2A\u9762\u5411\u590D\u65E6\u5927\u5B66\u5B66\u751F\u7684\u7B2C\u4E09\u65B9\u96C6\u6210\u5F0F\u6821\u56ED\u670D\u52A1\u5E73\u53F0\uFF0C\u7531\u65E6\u5915 App \u524D\u7AEF\u3001\u590D\u65E6\u5927\u5B66 UIS\u3001FDU Hole \u6811\u6D1E\u5E73\u53F0\u6784\u6210\u3002\u65E6\u5915\u9690\u79C1\u653F\u7B56\u7531\u8FD9\u4E09\u4E2A\u90E8\u5206\u7684\u9690\u79C1\u653F\u7B56\u6784\u6210\u3002
